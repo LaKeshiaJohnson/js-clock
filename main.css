@@ -39,4 +39,8 @@ html {
       background:black;
       position: absolute;
       top:50%;
+      transform-origin: 100%; /* puts pivot point on right hand side of line */
+      transform: rotate(90deg); /* makes postion of hands start at 12 o'clock */
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); /*realistic ticking animation */
     }
